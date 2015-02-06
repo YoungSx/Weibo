@@ -1,0 +1,113 @@
+﻿a{
+ text-decoration:none;
+}
+#main{
+
+}
+#timeline ul{
+ list-style-type:none;
+ margin:0px;
+ padding:0px;
+}
+textarea{
+ width:100%;
+}
+#title a,#local,input[type=submit]{
+ color:white;
+ text-shadow: 1px 1px 2px white;
+ box-shadow:0px 0px 5px #000000;
+}
+.bar{
+ margin-top:3px;
+ text-align:right;
+
+}
+
+#local{
+ background:red;
+ padding:3px;
+}
+.bar input[type=submit],.bar input[type=button]{
+ background:#6666FF;
+ border:0px;
+ height:26px;
+ display:inline-block;
+}
+#local:active,#title a:active{
+ box-shadow:0px 0px 3px #000000;
+}
+#title a{
+ background:black;
+ font-size:36px;
+ padding:0px 5px;
+}
+#title{
+ margin-bottom:5px;
+}
+#tips{
+ background:#FFCC99;
+ color:#663300;
+ box-shadow:0px 0px 5px #993300;
+ width:80px;
+ margin-bottom:10px;
+ padding:3px;
+ text-shadow: 1px 1px 2px white;
+}
+.msgbox .nick{
+ color:#006633;
+}
+.zpbox textarea{
+ width:340px;
+}
+textarea{
+ height:50px;
+ margin-top:5px;
+}
+.msgbox .msgbox{
+ border-left:5px #e6e6e6 solid;
+ margin:2px;
+}
+.msgbox{
+ border-bottom:1px #e5e5e5 solid;
+ border-left:5px white solid;
+ padding:5px;
+ padding-bottom:10px;
+ border-radius:5px;
+}
+.msgbox:hover{
+ border-left:5px #e5e5e5 solid;
+}
+.pubinfo{
+ margin-top:5px;
+}
+.pubinfo .zp{
+ color:#CCCCCC;
+}
+.pubinfo span,.pubinfo a{
+ color:#6699CC;
+}
+.fanye{
+ float:right;
+ text-decoration:none;
+}
+.fanye a{
+ text-decoration:none;
+ color:#993300;
+}
+.fanye{
+ margin-top:5px;
+}
+.zhuanping{
+ float:right;
+ position:relative;
+ 
+}
+form{
+ margin:0px;
+}
+.bar #local{
+ transition:all ease-in 0.5s;
+ -moz-transition:all ease-in 0.5s; 
+ -webkit-transition:all ease-in 0.5s; 
+ -o-transition:all ease-in 0.5s;
+}

@@ -1,0 +1,11 @@
+<?php
+$tx_cfg=array(
+   'appid'=>'',
+   'callback'=>'http://127.0.0.1/t/tx_callback.php',
+   'appkey'=>''
+);
+$sina_cfg=array(
+   'appkey'=>"",
+   'appsecret'=>"",
+   'callback'=>"http://127.0.0.1/t/sina_callback.php"
+);

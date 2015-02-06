@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+  <script type="text/javascript">
+   window.addEventListener('deviceorientation', update, true);
+   var lastTime=0,v=0,last=1;
+   function update(event){
+      var interval=30;//间隔时间
+      var deg=event.beta-20;
+      var beta=Math.round(deg-20)*3.14/180;
+      var a=Math.sin(beta)*9.82*15;//用倾斜角度求加速度(*10因为加速度太小)
+      if(((last>0) && (a<0) ) || ((last<0) && (a>0))) v=0;
+      last=a;
+      v=v+a*(interval/1000);//用加速度求速度（不确定对）
+      var curTime = new Date().getTime();
+      if( (curTime-lastTime>interval) && ( (deg<-0) || (deg>15))  ){//留出静止的一定角度以便用户进行操作。
+         if(document.body.scrollTop>=0 || beta>=0) scroll(0,document.body.scrollTop+v+deg);
+      }
+      lastTime=curTime;
+   }
+  </script>
+ </head>
+<body>
+  <script type="text/javascript">
+  
+   for(i=1;i<=200;++i){
+    document.write(i+"<br />");
+   }
+  </script>
+  <div id="beta"></div>
+  <div id="sin"></div>
+  <div id="a"></div>
+  <div id="v"></div>
+  <div id="test"></div>
+ </body>
+</html>
